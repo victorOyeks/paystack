@@ -21,7 +21,7 @@ public class AnotherPaystackService {
         headers.set("Authorization", "Bearer " + PaystackCredentials.MY_PAY_STACK_KEY);
         headers.setContentType(MediaType.APPLICATION_JSON);
 
-        String data = "{ \"email\": \"" + email + "\", \"amount\": \"" + amount + "\", \"currency\": \"USD\" }";
+        String data = "{ \"email\": \"" + email + "\", \"amount\": \"" + amount + "\"}";
 
         HttpEntity<String> requestEntity = new HttpEntity<>(data, headers);
 
